@@ -1,0 +1,43 @@
+body{
+    font-family: "Century Gothic";
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.wrapper{
+
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    width: 60%;
+    text-align: center;
+    animation: pop 2s;
+    
+}
+#question{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#myBtn{
+    background-color: black;
+    font-family: 'Century Gothic';
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    border: 0;
+    margin: 25px;
+}
+@keyframes pop {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
